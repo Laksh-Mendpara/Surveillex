@@ -1,6 +1,4 @@
 import json
-
-from docutils.writers.latex2e import definitions
 from nltk.corpus import wordnet as wn
 
 
@@ -19,15 +17,15 @@ def get_definition(file_path):
     with open(file_path, 'r') as f:
         data = json.load(f)
         labels = data['labels']
-        definitions = {}
+        lables_definitions = {}
         for label in labels:
             if label == "Normal Videos":
-                definitions[label] = "Regular video content without criminal activity."
+                lables_definitions[label] = "Regular video content without criminal activity."
             elif label == "RoadAccidents":
-                definitions[label] = "Accidents occurring on the road involving vehicles."
+                lables_definitions[label] = "Accidents occurring on the road involving vehicles."
             else:
-                definitions[label] = get_wordnet_definition(label)
-        return definitions
+                lables_definitions[label] = get_wordnet_definition(label)
+        return lables_definitions
 
 
 if __name__ == '__main__':
