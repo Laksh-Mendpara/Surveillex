@@ -22,5 +22,6 @@ if __name__ == '__main__':
     file = './data/ucf_crime_labels.json'
     BERT_embeddings = generate_final_text_embedding_BERT(file)
     SBERT_embeddings = generate_final_text_embedding_SBERT(file)
+    print(BERT_embeddings)
     print(SBERT_embeddings)
     

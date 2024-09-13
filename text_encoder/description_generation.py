@@ -1,7 +1,7 @@
 import os
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage, SystemMessage
-from secret_key import API_tog as API_KEY
+from secret_key import API_tog_1 as API_KEY
 
 # Set TogetherAI API key
 os.environ["TOGETHER_API_KEY"] = API_KEY
