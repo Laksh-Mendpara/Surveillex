@@ -11,7 +11,6 @@ def get_wordnet_definition(label):
         return "Definition not found in WordNet"
 
 
-
 def get_definition(file_path):
     # Fetch definitions for each label
     with open(file_path, 'r') as f:
