@@ -29,9 +29,9 @@ def generate_expanded_definition(definitions_dict):
             HumanMessage(content=prompt),
         ]
 
-        # Invoke the model and store the result in the output dictionary
+        # Invoke the model and store the expanded definition (content) in the output dictionary
         response = model.invoke(messages)
-        expanded_definitions[name] = response
+        expanded_definitions[name] = response.content
 
     return expanded_definitions
 
