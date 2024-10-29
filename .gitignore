@@ -1,3 +1,4 @@
 list/
 /text_encoder/secret_key.py
 text_encoder/__pycache__
+SemAlign/__pycache__
