@@ -1,2 +1,3 @@
 list/
 /text_encoder/secret_key.py
+text_encoder/__pycache__
